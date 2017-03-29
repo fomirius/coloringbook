@@ -1,2 +1,2 @@
-# ColoringBook
-There is an example for using SVG based vector images in Android
+# Coloring Book
+There is an example for using SVG images in Android
