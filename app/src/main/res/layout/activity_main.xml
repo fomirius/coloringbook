@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ml.fomi.apps.coloringbook.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="5dp">
+
+        <ml.fomi.apps.coloringbook.BrushImageView
+            android:id="@+id/imageView_brush"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView_brush"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView_black"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text="@string/b"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/imageView_gray"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:background="@android:color/darker_gray"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView_white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/w"
+                android:textColor="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView_left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="75"
+                android:background="#ff0000"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+
+        <ml.fomi.apps.coloringbook.PhilImageView
+            android:id="@+id/imageView_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView_brush"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/ll_left"
+            android:adjustViewBounds="true"
+            android:background="@color/colorBackground"
+            android:padding="@dimen/padPhilImage"
+            android:scaleType="centerInside"
+            android:src="@drawable/sandglass"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView_right"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView_brush"
+            android:background="#ff0000ff"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

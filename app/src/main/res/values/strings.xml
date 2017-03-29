@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Coloring Book</string>
+    <string name="w">W</string>
+    <string name="b">B</string>
+    <string name="about_header">About</string>
+    <string name="undo">Undo</string>
+    <string name="share">Share</string>
+    <string name="clear_all">Clear all</string>
+    <string name="color_white_cells">Color white cells</string>
+    <string name="logo_image_description">Logo image</string>
+    <string name="double_tap_for_zooming">Double tap on the image for zooming</string>
+    <string name="new_checkbox">Show on start</string>
+    <string-array name="text_about">
+        <item>Coloring book\n</item>
+        <item>@string/app_name</item>
+        <item>\n\nFeedback email:</item>
+        <item>\nfeedback@easysoft.ml</item>
+        <item>\nProgram version:\n</item>
+    </string-array>
+</resources>

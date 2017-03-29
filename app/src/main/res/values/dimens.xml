@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="share_image_width_px">1920px</dimen>
+    <dimen name="share_image_height_px">1080px</dimen>
+    <dimen name="share_image_padding_px">20px</dimen>
+    <dimen name="padPhilImage">0dp</dimen>
+</resources>
